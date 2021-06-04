@@ -20,13 +20,13 @@ function Send() {
     console.log(equation);
 
 
-    question_number = "<h4>" + number1 + " X " + number2 + "</h4>";
+    question_number = "<h4>" + Number1 + " X " + Number2 + "</h4>";
     input_box = "<br>Answer : <input type='text' id='input_check_box'>";
     check_button = "<br><br><button class='btn btn-info' onclick='check()'>Check</button>";
     row = question_number + input_box + check_button;
     document.getElementById("output").innerHTML = row;
-    document.getElementById("Number1").value = "";
-    document.getElementById("Number2").value = "";
+    document.getElementById("Number1").value;
+    document.getElementById("Number2").value;
 }
 
 
@@ -47,18 +47,18 @@ function check() {
 
     if (question_turn == "player1") {
         question_turn = "player2"
-        document.getElementById("player_question").innerHTML = "Question Turn - " + Player2_name;
+        document.getElementById("question_turn").innerHTML = "Question Turn - " + Player2_name;
     } else {
         question_turn = "player1"
-        document.getElementById("player_question").innerHTML = "Question Turn - " + Player1_name;
+        document.getElementById("question_turn").innerHTML = "Question Turn - " + Player1_name;
     }
 
     if (answer_turn == "player1") {
         answer_turn = "player2"
-        document.getElementById("player_answer").innerHTML = "Answer Turn - " + Player2_name;
+        document.getElementById("answer_turn").innerHTML = "Answer Turn - " + Player2_name;
     } else {
         answer_turn = "player1"
-        document.getElementById("player_answer").innerHTML = "Answer Turn - " + Player1_name;
+        document.getElementById("answer_turn").innerHTML = "Answer Turn - " + Player1_name;
     }
 
     document.getElementById("output").innerHTML = "";
